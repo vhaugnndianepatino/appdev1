@@ -1,6 +1,5 @@
 # ☁️ Cloud Computing
 
-![Cloud computing illustration](https://example.com/cloud-computing.png)
 
 ## Purpose
 The main purpose of cloud computing is to provide on-demand access to computing services such as servers, storage, databases, networking, software, and analytics over the internet instead of storing files manually on a physical device like a hard drive.
@@ -11,7 +10,7 @@ The main purpose of cloud computing is to provide on-demand access to computing 
 ## Usage
 
 ### In Education
-![Online learning](https://example.com/education-cloud.png)
+
 
 Cloud computing helps students and teachers collaborate efficiently and effectively. Cloud-based Learning Management Systems like **Google Classroom** allow teachers to upload course material remotely, and students can access all necessary books and modules with just a device and internet connection. With coursework hosted online, students do not need to worry about digital storage space for learning materials.
 
@@ -19,7 +18,7 @@ Cloud computing helps students and teachers collaborate efficiently and effectiv
 *Mattellio, 2024. “Cloud Computing in Education: Benefits, Challenges, and Implementation Process.” Retrieved from [Mattellio](https://www.matellio.com/blog/cloud-computing-in-education/?utm_source=chatgpt.com)*
 
 ### In IT
-![Cloud IT services](https://example.com/it-cloud.png)
+
 
 Cloud computing in IT provides services like storage, processing power, and applications over the internet, reducing the need for physical infrastructure. It enables businesses to scale resources, enhance collaboration, and improve efficiency while only paying for what they use.
 
@@ -29,7 +28,7 @@ Cloud computing in IT provides services like storage, processing power, and appl
 ## Examples
 
 ### In Education
-![Video conferencing](https://example.com/video-conferencing.png)
+
 
 Cloud-based video conferencing platforms like **Zoom** and **Google Meet** have become essential to modern education. They facilitate live interactions between teachers and students, offering features such as screen sharing, breakout rooms, and session recording. Google Meet integrates with Google Workspace for seamless scheduling, while Zoom provides advanced tools for larger meetings and webinars.
 
@@ -37,7 +36,6 @@ Cloud-based video conferencing platforms like **Zoom** and **Google Meet** have 
 *PCG Digital, 2022. “Google Meet vs. Zoom in Education.” Retrieved from [PCG Digital](https://pcg.io/insights/google-meet-vs-zoom-in-education/)*
 
 ### In IT
-![AWS cloud](https://example.com/aws-cloud.png)
 
 Cloud computing allows organizations to host and manage databases on platforms like **Amazon Web Services (AWS)**, enabling IT teams to scale storage and processing power on demand without maintaining physical servers. This reduces infrastructure costs and improves system reliability for enterprise applications.
 
