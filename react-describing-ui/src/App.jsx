@@ -1,10 +1,30 @@
-import Gallery from "./components/Gallery";  
-
-export default function App() {
-  return <Gallery />;
+export default function TodoList() {
+  return (
+    <>
+      <h1>Hedy Lamarr's Todos</h1>
+      <img
+        src="https://i.imgur.com/yXOvdOSs.jpg"
+        alt="Hedy Lamarr"
+        className="photo"
+      />
+      <ul>
+        <li>Invent new traffic lights</li>
+        <li>Rehearse a movie scene</li>
+        <li>Improve spectrum technology</li>
+      </ul>
+    </>
+  );
 }
 
 
+// TASK 2
+// import Gallery from "./components/Gallery";  
+
+// export default function App() {
+//   return <Gallery />;
+// } 
+
+// TASK 1
 // function Profile() {
 //   return (
 //     <img
@@ -23,6 +43,6 @@ export default function App() {
 //       <Profile />
 //     </section>
 //   );
-// } Task 1
+// } 
 
 
