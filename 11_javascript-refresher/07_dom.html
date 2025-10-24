@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Activity</title>
+</head>
+<body>
+  <button id="colorBtn">Change Background</button>
+  <p id="favoriteColor"></p>
+  <p id="delayedMessage"></p>
+
+  <script>
+    let favColor = prompt("What is your favorite color?")
+    document.body.style.backgroundColor = favColor
+    document.getElementById("favoriteColor").textContent = "Your favorite color is: " + favColor
+
+    function getRandomColor() {
+      let letters = "0123456789ABCDEF"
+      let color = "#"
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)]
+      }
+      return color
+    }
+
+    document.getElementById("colorBtn").addEventListener("click", function() {
+      document.body.style.backgroundColor = getRandomColor()
+    })
+
+    setTimeout(function() {
+      document.getElementById("delayedMessage").textContent = "This message appears after 2 seconds"
+    }, 2000)
+  </script>
+</body>
+</html>
