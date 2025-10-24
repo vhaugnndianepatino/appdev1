@@ -1,15 +1,42 @@
-import PackingList from './components/PackingList';
+import { people } from './components/data';
+import { getImageUrl } from './components/utils';
 
-function App() {
+export default function List() {
+  const listItems = people.map(person =>
+    <li key={person.id}>
+      <img
+        src={getImageUrl(person)}
+        alt={person.name}
+      />
+      <p>
+        <b>{person.name}:</b>
+        {' ' + person.profession + ' '}
+        known for {person.accomplishment}
+      </p>
+    </li>
+  );
   return (
-    <section>
-      
-      <PackingList />  
-    </section>
+    <article>
+      <h1>Scientists</h1>
+      <ul>{listItems}</ul>
+    </article>
   );
 }
 
-export default App;
+
+//conditionally render components
+// import PackingList from './components/PackingList';
+
+// function App() {
+//   return (
+//     <section>
+      
+//       <PackingList />  
+//     </section>
+//   );
+// }
+
+// export default App;
 
 
 //task 5
