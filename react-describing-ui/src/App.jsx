@@ -1,37 +1,52 @@
-import { getImageUrl } from './components/utils.jsx'
+import PackingList from './components/PackingList';
 
-export default function Profile() {
+function App() {
   return (
-    <Card>
-      <Avatar
-        size={100}
-        person={{
-          name: 'Katsuko Saruhashi',
-          imageId: 'YfeOqp2'
-        }}
-      />
-    </Card>
-  );
-}
-function Avatar({ person, size }) {
-  return (
-    <img
-      className="avatar"
-      src={getImageUrl(person)}
-      alt={person.name}
-      width={size}
-      height={size}
-    />
+    <section>
+      
+      <PackingList />  
+    </section>
   );
 }
 
-function Card({ children }) {
-  return (
-    <div className="card">
-      {children}
-    </div>
-  );
-}
+export default App;
+
+
+//task 5
+// import { getImageUrl } from './components/utils.jsx'
+
+// export default function Profile() {
+//   return (
+//     <Card>
+//       <Avatar
+//         size={100}
+//         person={{
+//           name: 'Katsuko Saruhashi',
+//           imageId: 'YfeOqp2'
+//         }}
+//       />
+//     </Card>
+//   );
+// }
+// function Avatar({ person, size }) {
+//   return (
+//     <img
+//       className="avatar"
+//       src={getImageUrl(person)}
+//       alt={person.name}
+//       width={size}
+//       height={size}
+//     />
+//   );
+// }
+
+// function Card({ children }) {
+//   return (
+//     <div className="card">
+//       {children}
+//     </div>
+//   );
+// }
 
 
 //How to use curly braces with JSX to access JavaScript functionality from your components
