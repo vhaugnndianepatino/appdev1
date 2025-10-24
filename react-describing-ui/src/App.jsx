@@ -1,28 +1,65 @@
-const person = {
-  name: 'Gregorio Y. Zara',
-  theme: {
-    backgroundColor: 'black',
-    color: 'pink'
-  }
-};
+import { getImageUrl } from './components/utils.jsx'
 
-export default function TodoList() {
+export default function Profile() {
   return (
-    <div style={person.theme}>
-      <h1>{person.name}'s Todos</h1>
-      <img
-        className="avatar"
-        src="https://i.imgur.com/7vQD0fPs.jpg"
-        alt="Gregorio Y. Zara"
+    <Card>
+      <Avatar
+        size={100}
+        person={{
+          name: 'Katsuko Saruhashi',
+          imageId: 'YfeOqp2'
+        }}
       />
-      <ul>
-        <li>Improve the videophone</li>
-        <li>Prepare aeronautics lectures</li>
-        <li>Work on the alcohol-fuelled engine</li>
-      </ul>
+    </Card>
+  );
+}
+function Avatar({ person, size }) {
+  return (
+    <img
+      className="avatar"
+      src={getImageUrl(person)}
+      alt={person.name}
+      width={size}
+      height={size}
+    />
+  );
+}
+
+function Card({ children }) {
+  return (
+    <div className="card">
+      {children}
     </div>
   );
 }
+
+
+//How to use curly braces with JSX to access JavaScript functionality from your components
+// const person = {
+//   name: 'Gregorio Y. Zara',
+//   theme: {
+//     backgroundColor: 'black',
+//     color: 'pink'
+//   }
+// };
+
+// export default function TodoList() {
+//   return (
+//     <div style={person.theme}>
+//       <h1>{person.name}'s Todos</h1>
+//       <img
+//         className="avatar"
+//         src="https://i.imgur.com/7vQD0fPs.jpg"
+//         alt="Gregorio Y. Zara"
+//       />
+//       <ul>
+//         <li>Improve the videophone</li>
+//         <li>Prepare aeronautics lectures</li>
+//         <li>Work on the alcohol-fuelled engine</li>
+//       </ul>
+//     </div>
+//   );
+// }
 
 
 //iii. How to add markup to JavaScript with JSX
