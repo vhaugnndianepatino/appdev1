@@ -7,7 +7,7 @@ function App() {
       <img
         src="https://i.imgur.com/yXOvdOSs.jpg"
         alt="Hedy Lamarr"
-        class="photo"
+        className="photo"
       />
       <ul>
         <li>Invent new traffic lights</li>
