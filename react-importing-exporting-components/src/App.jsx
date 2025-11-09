@@ -1,8 +1,13 @@
-import "./App.css";
-import Gallery from "./components/Gallery";
-
+import Gallery, { Profile } from "./components/Gallery";
 function App() {
-  return <Gallery />;
+    return (
+    <>
+      <Gallery />
+      <Profile />
+      <Profile />
+      <Profile />
+    </>
+  );
 }
 
 export default App;
